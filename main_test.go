@@ -24,3 +24,10 @@ func Test_CalculateFuel(t *testing.T) {
 		})
 	}
 }
+
+func Test_SumOfFuels(t *testing.T) {
+	input := []int{12, 14, 1969, 100756}
+	want := 34241
+	got := SumOfFuels(input)
+	assert.Equal(t, want, got)
+}
