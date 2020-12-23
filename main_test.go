@@ -18,7 +18,7 @@ func Test_CalculateFuel(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		t.Run(fmt.Sprintf("CalculateFuel(%s)", test.input), func(t *testing.T) {
+		t.Run(fmt.Sprintf("CalculateFuel(%d)", test.input), func(t *testing.T) {
 			got := CalculateFuel(test.input)
 			assert.Equal(t, test.want, got)
 		})
