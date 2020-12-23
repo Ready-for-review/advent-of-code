@@ -8,8 +8,8 @@ import (
 
 func Test_CalculateFuel(t *testing.T) {
 	tests := []struct {
-		input ModuleMass
-		want  Fuel
+		input int
+		want  int
 	}{
 		{12, 2},
 		{14, 2},
